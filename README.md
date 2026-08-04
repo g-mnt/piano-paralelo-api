@@ -17,17 +17,15 @@ Backend da plataforma Piano Paralelo — API REST em Go.
 # 1. Copie o .env
 cp .env.example .env
 
-# 2. Suba o banco
+# 2. Suba apenas o banco de dados (PostgreSQL via Docker)
 docker compose up -d db
 
-# 3. Instale as dependências Go
+# 3. Instale as dependências Go (só na primeira vez)
 go mod tidy
 
-# 4. Rode o servidor (migrations e seed rodam automaticamente)
+# 4. Rode o servidor diretamente
 make run
-
-# Ou tudo junto com docker
-docker compose up
+# migrations e seed rodam automaticamente na startup
 ```
 
 ## Endpoints

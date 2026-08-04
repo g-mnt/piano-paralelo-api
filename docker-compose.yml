@@ -16,14 +16,5 @@ services:
       timeout: 5s
       retries: 5
 
-  api:
-    build: .
-    ports:
-      - "8080:8080"
-    env_file: .env
-    depends_on:
-      db:
-        condition: service_healthy
-
 volumes:
   pgdata:
