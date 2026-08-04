@@ -1,0 +1,3 @@
+DROP TABLE IF EXISTS student_profiles;
+DROP TABLE IF EXISTS auth_tokens;
+DROP TABLE IF EXISTS users;

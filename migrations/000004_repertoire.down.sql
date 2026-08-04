@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS piece_progress;
+DROP TABLE IF EXISTS pieces;
